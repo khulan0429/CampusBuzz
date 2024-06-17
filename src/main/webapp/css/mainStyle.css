@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+/* Replace c-item with product-card */
+.product-card {
+  height: 650px;
+}
+
+/* Replace c-img with product-card-img-top */
+.product-card-img-top {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background: #222;
+  padding: 5px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Replace logo with your logo class */
+.logo a:hover {
+  text-decoration: none;
+}
+
+/* Replace menu with your menu class */
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
+/* Replace toggle with your toggle class */
+.logo a,
+.toggle a {
+  font-size: 20px;
+}
+
+/* Replace button and button.secondary with your button classes */
+.btn-primary {
+  border-bottom: 1px #444 solid;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Replace toggle with your toggle class */
+.toggle {
+  order: 1;
+}
+
+/* Replace button with your button class */
+.item.button {
+  order: 2;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+
+/* Replace item.active with your active class */
+.item.active {
+  display: block;
+}
+
+/* Replace toggle with your toggle class */
+.toggle {
+  cursor: pointer;
+}
+
+/* Replace bars with your bars class */
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+/* Replace bars:before and bars:after with your bars:before and your bars:after */
+.bars:before,
+.bars:after {
+  background: #999;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+/* Replace bars:before with your bars:before */
+.bars:before {
+  top: 5px;
+}
+
+/* Replace bars:after with your bars:after */
+.bars:after {
+  top: -5px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 468px) {
+  .menu {
+      justify-content: center;
+  }
+
+  /* Replace logo with your logo class */
+  .logo {
+      flex: 1;
+  }
+
+  /* Replace item.button with your item.button class */
+  .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+
+  /* Replace toggle with your toggle class */
+  .toggle {
+      order: 2;
+  }
+
+  /* Replace button.secondary with your button.secondary class */
+  .button.secondary {
+      border: 0;
+  }
+
+  /* Replace button and button.secondary with your button classes */
+  .button a {
+      padding: 7.5px 15px;
+      background: teal;
+      border: 1px #006d6d solid;
+      border-radius: 50em;
+  }
+
+  /* Replace button.secondary with your button.secondary class */
+  .button.secondary a {
+      background: transparent;
+  }
+
+  /* Replace button a:hover with your button a:hover */
+  .button a:hover {
+      text-decoration: none;
+      transition: all .25s;
+  }
+
+  /* Replace button:not(.secondary) a:hover with your button:not(.secondary) a:hover */
+  .button:not(.secondary) a:hover {
+      background: #006d6d;
+      border-color: #005959;
+  }
+
+  /* Replace button.secondary a:hover with your button.secondary a:hover */
+  .button.secondary a:hover {
+      color: #ddd;
+  }
+}
+
+/* Replace btn-primary with your btn-primary class */
+.btn-primary {
+  background-color: transparent; /* Makes the button background transparent */
+  color: #007bff; /* Button text color - use a color that stands out on your background */
+  padding: 8px 16px; /* Adjust padding to your preference */
+  border: 2px solid #007bff; /* Border to make the button visible */
+  border-radius: 4px; /* Rounded corners for the button */
+  text-decoration: none; /* Removes underline from text */
+  cursor: pointer; /* Shows a pointer cursor when hovering over the button */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Replace btn-primary:hover and btn-primary:focus with your btn-primary:hover and btn-primary:focus */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0056b3; /* Slightly darker background on hover/focus */
+  border-color: #0056b3; /* Border color changes on hover/focus */
+  color: white; /* Text color changes on hover/focus for better visibility */
+  text-decoration: none; /* Ensures text remains not underlined on hover/focus */
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+  /* Replace item with your item class */
+  .item {
+      display: block;
+      width: auto;
+  }
+
+  /* Replace toggle with your toggle class */
+  .toggle {
+      display: none;
+  }
+
+  /* Replace logo with your logo class */
+  .logo {
+      order: 0;
+  }
+
+  /* Replace item with your item */
+  /* Add your desktop menu styles here */
+}

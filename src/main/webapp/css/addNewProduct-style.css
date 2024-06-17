@@ -1,0 +1,87 @@
+body {
+  background: url('../assets/MainImg/background.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.middle-div {
+  width: 70%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+  box-sizing: border-box; /* Include padding and border in the width */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px; /* Padding for better spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 3D shadow effect */
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.input-style {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border-radius: 10px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for focus */
+}
+
+.input-style:focus, textarea:focus, button:focus {
+  outline: 4px solid orange;
+  background-color: rgb(224, 255, 219); /* Orange outline on focus */
+}
+
+textarea.input-style {
+  height: 150px; /* Bigger content area */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.button {
+  background-color: #8E2D29;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 25px; /* Rounded corners */
+  width: 100%; /* Full width */
+}
+
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+hr {
+  width: 90%;
+}
+
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+.alert {
+  color: yellow;
+}
